@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center py-3">Our Projects</h1>
+    <div class="row row-cols-1 row-cols-lg-3">
+      {% for student in res %}
+      <div class="col">
+        <div class="card w-100 mb-3">
+          <div class="row">
+            
+            <div class="card-body col-lg-9">
+              <h5 class="card-title">{{ student.ptitle }} </h5>
+              <p class="card-text">{{ student.pmembers }}</p>
+              <p class="card-text">{{ student.pguide }}</p>
+              <p class="card-text">{{ student.pdescription }}</p>
+       
+              
+            </div>
+          </div>
+         </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+</div>
